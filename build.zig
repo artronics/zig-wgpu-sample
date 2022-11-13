@@ -5,6 +5,7 @@ const zpool = @import("./zig-gamedev/libs/zpool/build.zig");
 const zglfw = @import("./zig-gamedev/libs/zglfw/build.zig");
 const zgui = @import ("./zig-gamedev/libs/zgui/build.zig");
 
+// TODO: run zig-gamedev build, otherwise submodule won't be present and it will cause error
 pub fn build(b: *std.build.Builder) void {
     const target = b.standardTargetOptions(.{});
     const mode = b.standardReleaseOptions();
